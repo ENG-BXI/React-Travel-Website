@@ -24,9 +24,9 @@ const Popular = () => {
 
 function PopularImage({image, title, location}) {
   return (
-    <div className='image-card  text-start mb-5'>
-      <div className='image-cover overflow-hidden mb-2'>
-        <img src={image} alt='PopularImage' />
+    <div className='image-card text-start mb-5'>
+      <div className='image-cover image-popular-cover overflow-hidden mb-2'>
+        <img className='hovered-image' src={image} alt='PopularImage' />
       </div>
       <h5>{title}</h5>
       <p>

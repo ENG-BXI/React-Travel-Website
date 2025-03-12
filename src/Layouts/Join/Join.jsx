@@ -13,8 +13,8 @@ const Join = () => {
       <button className='w-100 mt-3'>
         Subscribe Our Newsletter <i class='ri-arrow-right-line'></i>
       </button>
-      <div>
-        <img className=' mt-4 px-3' src={JoinImage} alt='JoinImage' />
+      <div className='image-cover mx-3 mt-4'>
+        <img className='hovered-image' src={JoinImage} alt='JoinImage' />
       </div>
     </section>
   );

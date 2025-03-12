@@ -1,29 +1,9 @@
-.popular {
-    background-color: var(--body-color);
-}
-
 .images .image-card {
     width: 250px;
 }
 
-.image-cover {
+.image-popular-cover{
     width: 250px;
     height: 250px;
-
 }
 
-.image-cover img {
-    transition: 0.4s;
-    -webkit-transition: 0.4s;
-    -moz-transition: 0.4s;
-    -ms-transition: 0.4s;
-    -o-transition: 0.4s;
-}
-
-.images .image-card:hover img {
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
-}

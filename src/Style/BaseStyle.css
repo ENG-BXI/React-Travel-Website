@@ -73,6 +73,7 @@ section {
     width: 100%;
     padding-inline: 1rem;
     padding-bottom: 5rem;
+        background-color: var(--body-color);
 }
 
 h2 {
@@ -81,4 +82,23 @@ h2 {
 
 img {
     width: 100%;
+}
+.image-cover {
+    overflow: hidden;
+}
+.image-cover .hovered-image {
+    object-fit: cover;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+
+.image-cover:hover .hovered-image {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
 }

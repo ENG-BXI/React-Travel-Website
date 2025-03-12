@@ -12,8 +12,8 @@ const About = () => {
       <button className='mb-4'>
         Explore Travel <i class='ri-arrow-right-line'></i>
       </button>
-      <div className='about-image overflow-hidden bg-danger mx-3'>
-        <img src={AboutImage} alt='AboutImage' />
+      <div className='about-image image-cover mx-3'>
+        <img className='hovered-image' src={AboutImage} alt='AboutImage' />
       </div>
     </section>
   );
