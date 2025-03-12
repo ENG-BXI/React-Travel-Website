@@ -1,0 +1,68 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Poppins:wght@400;500&display=swap");
+
+:root {
+    --header-height: 3.5rem;
+
+    /*========== Colors ==========*/
+    /*Color mode HSL(hue, saturation, lightness)*/
+    --title-color: hsl(0, 0%, 95%);
+    --text-color: hsl(0, 0%, 70%);
+    --text-color-light: hsl(0, 0%, 60%);
+    --body-color: hsl(0, 0%, 0%);
+    --container-color: hsl(0, 0%, 8%);
+
+    /*========== Font and typography ==========*/
+    /*.5rem = 8px | 1rem = 16px ...*/
+    --body-font: "Poppins", sans-serif;
+    --second-font: "Montserrat", sans-serif;
+    --biggest-font-size: 2.75rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+
+    /*========== Font weight ==========*/
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+    /*========== z index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+
+::-webkit-scrollbar {
+    background-color: var(--container-color);
+    width: 3px;
+
+}
+
+
+::-webkit-scrollbar-thumb {
+    background-color: goldenrod;
+}
+
+body,
+input {
+    font-family: var(--body-font) !important;
+    font-size: var(--normal-font-size) !important;
+    color: var(--text-color) !important;
+}
+
+section {
+    min-height: 100vh;
+    width: 100%;
+    padding-inline: 1rem;
+    padding-bottom: 5rem;
+}
+
+h2 {
+    color: var(--title-color) !important;
+}
+
+img {
+    width: 100%;
+}

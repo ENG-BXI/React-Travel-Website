@@ -1,0 +1,9 @@
+export {default as BackgroundImage} from '../img/home-bg.jpg';
+export {default as HeroImage_1} from '../img/home-trees.jpg';
+export {default as HeroImage_2} from '../img/home-beach.jpg';
+export {default as HeroImage_3} from '../img/home-lake.jpg';
+export {default as HeroImage_4} from '../img/home-mountain.jpg';
+export {default as AboutImage} from '../img/about-beach.jpg';
+export {default as PopularImage_1} from '../img/popular-mountain.jpg';
+export {default as PopularImage_2} from '../img/popular-forest.jpg';
+export {default as PopularImage_3} from '../img/popular-forest.jpg';
