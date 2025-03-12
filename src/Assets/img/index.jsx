@@ -6,4 +6,7 @@ export {default as HeroImage_4} from '../img/home-mountain.jpg';
 export {default as AboutImage} from '../img/about-beach.jpg';
 export {default as PopularImage_1} from '../img/popular-mountain.jpg';
 export {default as PopularImage_2} from '../img/popular-forest.jpg';
-export {default as PopularImage_3} from '../img/popular-forest.jpg';
+export {default as PopularImage_3} from '../img/popular-lake.jpg';
+export {default as ExploreImage} from '../img/explore-beach.jpg';
+export {default as personImage} from '../img/explore-perfil.png';
+export {default as JoinImage} from '../img/join-island.jpg';

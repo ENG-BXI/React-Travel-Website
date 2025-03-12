@@ -3,18 +3,10 @@
     background-position: center;
 }
 
-button {
-    background-color: rgba(150, 150, 150, 0.4);
-    font-family: var(--body-font) !important;
-    font-size: var(--normal-font-size) !important;
-    padding: 1rem;
-    border: none;
-    color: white;
-}
-
 button:hover {
     background-color: rgba(150, 150, 150, 0.5);
 }
+
 
 .hero h4 {
     margin-top: 10rem;

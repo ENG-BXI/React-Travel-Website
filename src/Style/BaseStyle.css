@@ -52,6 +52,22 @@ input {
     color: var(--text-color) !important;
 }
 
+button,
+input {
+    background-color: rgba(150, 150, 150, 0.4);
+    font-family: var(--body-font) !important;
+    font-size: var(--normal-font-size) !important;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    color: white;
+}
+
+input {
+    width: 100%;
+    background-color: rgba(150, 150, 150, 0.2);
+}
+
 section {
     min-height: 100vh;
     width: 100%;

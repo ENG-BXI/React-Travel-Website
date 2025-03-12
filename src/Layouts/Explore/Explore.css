@@ -1,0 +1,36 @@
+.explore {
+    background-color: var(--body-color);
+}
+
+.explore-cover-image {
+    height: 250px;
+    background-color: red;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    height: 70px;
+    width: 100%;
+}
+
+.overlay-top {
+    background: linear-gradient(to bottom, black 10%,
+            rgba(0, 0, 0, 0.1));
+    top: 0;
+}
+
+.overlay-down {
+    background: linear-gradient(to top, black 10%,
+            rgba(0, 0, 0, 0));
+    bottom: 0;
+}
+
+.explore-cover-image h2 {
+    position: relative;
+    bottom: 2rem;
+    z-index: 3;
+    color: rgba(255, 255, 255, 0.8) !important;
+}
