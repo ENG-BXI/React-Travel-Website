@@ -75,6 +75,7 @@ section {
     padding-inline: 1rem;
     padding-bottom: 5rem;
     background-color: var(--body-color);
+    overflow-x: hidden;
 }
 
 h2 {
