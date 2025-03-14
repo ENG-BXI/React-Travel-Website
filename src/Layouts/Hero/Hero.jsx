@@ -14,11 +14,24 @@ const Hero = () => {
   let imageRef = useRef(null);
   let normalAnimation = {
     hidden: {opacity: 0, y: '-70px'},
-    visible: {opacity: 1.5, y: '0px', transition: {duration: 1.5}}
+    visible: {
+      opacity: 1,
+      y: '0px',
+      transition: {
+        duration: 1.5,
+        staggerChildren: 0.5 // تأخير نصف ثانية بين كل صورة
+      },
+ 
+    },
   };
-const itemVariants = {
-  hidden: {opacity: 0, y: 50},
-  show: {opacity: 1, y: 0, transition: {duration: 0.5}}
+const containerVariants = {
+  hidden: {opacity: 0},
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.3 
+    }
+  }
 };
   return (
     <section ref={imageRef} style={{backgroundImage: `url(${ImageList[0].image})`}} className='hero d-flex flex-column align-items-center align-items-md-start text-center text-md-start'>
@@ -33,13 +46,11 @@ const itemVariants = {
           Start Your Journey <i className='ri-arrow-right-line'></i>
         </button>
       </motion.div>
-      <div
-        className='images d-flex flex-column gap-3 align-items-center justify-content-start flex-md-row flex-wrap '
-      >
+      <motion.div variants={containerVariants} initial='hidden' animate='show' className='images d-flex flex-column gap-3 align-items-center justify-content-start flex-md-row flex-wrap '>
         {ImageList.map((image, index) => (
-          <HeroImage  key={index} imageHeroRef={imageRef} index={index} image={image.image} title={image.title} />
+          <HeroImage key={index} imageHeroRef={imageRef} index={index} image={image.image} title={image.title} />
         ))}
-      </div>
+      </motion.div>
     </section>
   );
 };

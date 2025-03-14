@@ -1,7 +1,20 @@
 import React from 'react';
 import './Explore.css';
 import {ExploreImage, personImage} from '../../Assets/img';
+import {motion} from 'motion/react';
+
 const Explore = () => {
+  let normalAnimation = {
+    hidden: {opacity: 0, y: '-70px'},
+    visible: {
+      opacity: 1,
+      y: '0px',
+      transition: {
+        duration: 1.5,
+        staggerChildren: 0.5 
+      }
+    }
+  };
   return (
     <section className='explore px-0 d-flex flex-column align-items-center text-center align-items-lg-start text-lg-start'>
       <div className='w-100 explore-cover-image mb-5 '>
@@ -9,7 +22,7 @@ const Explore = () => {
         <img className='h-100' src={ExploreImage} alt='ExploreImage' />
         <div className='overlay overlay-down'></div>
       </div>
-      <div className='explore-data w-100'>
+      <motion.div variants={normalAnimation} initial='hidden' whileInView='visible' viewport={{once: true, amount: 0.3}} className='explore-data w-100'>
         <h2 className='px-3'>
           Explore The <br />
           Best Paradises
@@ -21,7 +34,7 @@ const Explore = () => {
             Paul Jeams
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

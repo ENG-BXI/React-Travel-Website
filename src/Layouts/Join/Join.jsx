@@ -1,10 +1,18 @@
 import React from 'react';
 import './Join.css';
+import {motion} from 'motion/react';
 import {JoinImage} from '../../Assets/img';
 const Join = () => {
+    const divVariants = {
+      show: {
+        opacity: 1,
+        x: 0,
+        transition: {duration: 1.5}
+      }
+    };
   return (
     <section className='join d-flex flex-column justify-content-center align-items-center column-gap-5 flex-md-row text-center'>
-      <div className='join-data order-md-1 text-md-start'>
+      <motion.div variants={{...divVariants, hidden: {opacity: 0, x: '-70px'}}} initial='hidden' whileInView='show' viewport={{once: true, amount: 0.3}} className='join-data order-md-1 text-md-start'>
         <h2>
           Your Journey <br />
           Starts Here
@@ -14,10 +22,10 @@ const Join = () => {
         <button className='w-100 mt-3'>
           Subscribe Our Newsletter <i className='ri-arrow-right-line'></i>
         </button>
-      </div>
-      <div className='join-image image-cover mx-3 mt-4'>
+      </motion.div>
+      <motion.div variants={{...divVariants, hidden: {opacity: 0, x: '70px'}}} initial='hidden' whileInView='show' viewport={{once: true, amount: 0.3}} className='join-image image-cover mx-3 mt-4'>
         <img className='hovered-image' src={JoinImage} alt='JoinImage' />
-      </div>
+      </motion.div>
     </section>
   );
 };
