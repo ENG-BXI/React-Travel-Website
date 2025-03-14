@@ -13,7 +13,7 @@ const Popular = () => {
         Enjoy The Beauty <br />
         Of The World
       </h2>
-      <div className='images'>
+      <div className='images d-flex flex-column flex-md-row column-gap-3 column-gap-lg-5'>
         {PopularImages.map((image, index) => (
           <PopularImage key={index} image={image.image} title={image.title} location={image.location} />
         ))}
@@ -30,7 +30,7 @@ function PopularImage({image, title, location}) {
       </div>
       <h5>{title}</h5>
       <p>
-        <i class='ri-map-pin-line'></i> {location}
+        <i className='ri-map-pin-line'></i> {location}
       </p>
     </div>
   );

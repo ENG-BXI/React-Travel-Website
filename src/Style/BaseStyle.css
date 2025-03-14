@@ -37,6 +37,7 @@
 ::-webkit-scrollbar {
     background-color: var(--container-color);
     width: 3px;
+    height: 2px;
 
 }
 
@@ -70,10 +71,10 @@ input {
 
 section {
     min-height: 100vh;
-    width: 100%;
+    min-width: 100%;
     padding-inline: 1rem;
     padding-bottom: 5rem;
-        background-color: var(--body-color);
+    background-color: var(--body-color);
 }
 
 h2 {
@@ -83,9 +84,11 @@ h2 {
 img {
     width: 100%;
 }
+
 .image-cover {
     overflow: hidden;
 }
+
 .image-cover .hovered-image {
     object-fit: cover;
     transition: 0.4s;
@@ -101,4 +104,42 @@ img {
     -moz-transform: scale(1.1);
     -ms-transform: scale(1.1);
     -o-transform: scale(1.1);
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0 !important;
+}
+
+.top-button {
+    z-index: 999;
+    position: fixed;
+    bottom: -10rem;
+    right: 1rem;
+    background-color: goldenrod;
+    color: black;
+    padding: 0.5rem 0.75rem;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+
+.top-button.show {
+    bottom: 1rem;
+}
+
+
+@media screen and (min-width: 768px) {
+    section {
+        padding-inline: 5rem;
+    }
 }

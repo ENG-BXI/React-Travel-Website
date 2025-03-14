@@ -24,9 +24,25 @@
     bottom: 0;
 }
 
-.explore-cover-image h2 {
+.explore .explore-data {
     position: relative;
-    bottom: 2rem;
+    bottom: 5rem;
     z-index: 3;
     color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.explore p {
+    max-width: 600px;
+}
+
+@media screen and (min-width: 768px) {
+    .explore-cover-image {
+        height: 400px;
+    }
+
+    .explore .explore-data {
+        bottom: 6rem;
+        padding-inline: 5rem;
+    }
+
 }

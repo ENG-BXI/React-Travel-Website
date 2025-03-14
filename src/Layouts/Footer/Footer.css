@@ -1,3 +1,28 @@
 footer {
-    background-color: var(--body-color);
+    background-color: var(--container-color);
+    padding-inline: 1rem;
+}
+
+ul li {
+    cursor: pointer;
+    width: min-content;
+    margin-block: 0.5rem;
+}
+
+footer h3 {
+    color: white !important;
+}
+
+.copyright {
+    font-size: 12px;
+}
+
+.social-icon {
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    footer {
+        padding-inline: 7rem ;
+    }
 }

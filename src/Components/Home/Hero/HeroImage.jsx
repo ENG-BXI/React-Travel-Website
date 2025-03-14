@@ -1,7 +1,15 @@
-function HeroImage({image, title}) {
+function HeroImage({image, title, index, imageHeroRef}) {
+  function handleClick() {
+    imageHeroRef.current.style.backgroundImage = `url(${image})`;
+  }
   return (
-    <div className="image-cover">
-      <img className="hovered-image" src={image} alt='HeroImage_1' />
+    <div
+      onClick={() => {
+        handleClick();
+      }}
+      className='image-cover'
+    >
+      <img className='hovered-image' src={image} alt='HeroImage_1' />
       <p className='position-absolute mb-0 text-white'>{title}</p>
     </div>
   );

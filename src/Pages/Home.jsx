@@ -5,6 +5,7 @@ import Popular from '../Layouts/Popular/Popular';
 import Explore from '../Layouts/Explore/Explore';
 import Join from '../Layouts/Join/Join';
 import Footer from '../Layouts/Footer/Footer';
+import TopButton from '../Components/TopButton';
 
 const Home = () => {
   return (
@@ -14,7 +15,8 @@ const Home = () => {
       <Popular />
       <Explore />
       <Join />
-      <Footer/>
+      <Footer />
+      <TopButton/>
     </>
   );
 };

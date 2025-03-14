@@ -1,6 +1,8 @@
 .hero {
-    background-image: url('../../Assets/img/home-bg.jpg');
+    /* background-image: url('../../Assets/img/home-bg.jpg'); */
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 button:hover {
@@ -14,18 +16,29 @@ button:hover {
 
 .hero h2 {
     font-size: 3rem;
+    text-shadow: 0 0 10px gray;
+}
+
+.hero p {
+    max-width: 450px;
 }
 
 .hero .images div {
-    width: 200px;
+    width:250px;
     position: relative
 }
+
 .hero .images img {
     cursor: pointer;
+height: 166px;
 }
-
-
 .hero .images div p {
     bottom: 0.5rem;
     left: 0.5rem
+}
+
+@media screen and (min-width: 768px) {
+    .hero h2 {
+        font-size: 4rem;
+    }
 }
