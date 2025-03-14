@@ -6,7 +6,7 @@ Live Demo => https://react-travel-website-bxi.netlify.app/
 
 ### Responsive Travel Website
 
-- Responsive Travel Website Design Using HTML CSS & JavaScript
+- Responsive Travel Website Design Using React And Bootstrap
 - Contains animations when scrolling.
 - Smooth scrolling in each section.
 - Developed first with the Mobile First methodology, then for desktop.
